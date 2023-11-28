@@ -55,7 +55,7 @@ ingress:
   hosts:
     - paths:
         - path: /api/bets
-          pathType: ImplementationSpecific
+          pathType: Prefix
           backend:
             serviceName: bets
             servicePort: 9999
